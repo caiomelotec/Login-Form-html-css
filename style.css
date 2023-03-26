@@ -1,0 +1,110 @@
+body {
+    background-color: rgb(19, 228, 228);
+
+}
+
+.a-btn {
+    text-decoration: none;
+}
+
+.container-login {
+    top: 200px;
+    left: 42%;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    width: 350px;
+    height: 400px;
+    justify-content: center;
+    margin: auto;
+    padding: 20px;
+    border-radius: 9px;
+    box-shadow: 0 0px 4px 1px;
+    background-color: white;
+
+}
+
+.form-login-password,
+.form-login-email {
+    display: flex;
+    flex-direction: column;
+    margin-top: 8px;
+}
+
+.btn-anmelden,
+.btn-login {
+    border-radius: 5px;
+    margin-top: 10px;
+    padding: 10px;
+    color: rgb(0, 37, 37);
+    background-color: rgb(37, 202, 202);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.2rem;
+    border: none;
+    text-decoration: none;
+
+}
+
+.input-email {
+    padding: 10px;
+    padding-right: 175px;
+    border-radius: 5px;
+}
+
+.input-pass {
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.h2-login {
+    display: flex;
+    justify-content: center;
+    font-size: 2.1rem;
+    font-family: Arial, Helvetica, sans-serif;
+    animation-name: texto;
+    transition: font-size 1s;
+
+}
+
+.h2-login:hover {
+    font-size: 2.9rem;
+}
+
+.btn-login:hover,
+.btn-anmelden:hover {
+    background-image: url("aaa.jpg");
+    color: white;
+    transition: all 1.5s;
+}
+
+.btn-login:active,
+.btn-anmelden:active {
+    opacity: 70%;
+    color: aqua;
+}
+
+
+@media only screen and (max-width: 650px) {
+    .container-login {
+        width: 250px;
+        height: 300px;
+        position: absolute;
+        left: 23%;
+        top: 120px;
+    }
+
+    .input-email {
+        padding: 10px;
+        padding-right: 68px;
+        border-radius: 5px;
+    }
+
+    .h2-login {
+        font-size: 1.5rem;
+        transition: font-size 1s;
+    }
+
+    .h2-login:hover {
+        font-size: 2.1rem;
+    }
+}
